@@ -1,0 +1,22 @@
+{
+  "name": "catCollection",
+  "homepage": "https://github.com/katevontaine/catCollection",
+  "authors": [
+    "Kate Wilson <wilsonkate.kw@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-route": "~1.4.8",
+    "angular": "~1.4.8"
+  }
+}

@@ -1,0 +1,45 @@
+body {
+  font-family: 'Lato', sans-serif; }
+
+h1 {
+  position: absolute;
+  font-family: 'Lato', sans-serif;
+  font-size: 90px;
+  padding-left: 30px; }
+
+@keyframes colors {
+  0% {
+    color: #ff1aff; }
+  15% {
+    color: #ff80ff; }
+  20% {
+    color: #ffccff; }
+  30% {
+    color: #b300b2; }
+  40% {
+    color: #ff1aff; }
+  45% {
+    color: #ff80ff; }
+  50% {
+    color: #ffccff; }
+  55% {
+    color: #b300b2; }
+  60% {
+    color: #ff1aff; }
+  75% {
+    color: #ff80ff; }
+  90% {
+    color: #ffccff; }
+  100% {
+    color: #b300b2; } }
+
+.cool {
+  width: 100px;
+  height: 100px;
+  animation-name: colors;
+  animation-duration: 30s; }
+
+button {
+  position: absolute;
+  font-family: 'Lato', sans-serif;
+  font-size: 30px; }
