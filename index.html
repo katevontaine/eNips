@@ -6,12 +6,16 @@
     <link rel="stylesheet" href="styles.css" media="screen" title="no title" charset="utf-8">
     <title>eNIP</title>
   </head>
-  <body>
-    <img style="max-width:100%; position:fixed;" class="mainPic" src="http://animalfair.com/wp-content/uploads/2015/04/cats-2.jpg">
-    <div class="cool"><h1>eNip</h1></div>
-    <div class="coolToo"><button type="button" name="button">Shop Nips!</button>
-    </div>
+  <body ng-app="eNip">
 
+<ng-view></ng-view>
+
+
+    <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
+    <script src="app.module.js" charset="utf-8"></script>
+    <script src="app.controllers.js" charset="utf-8"></script>
+    <script src="app.services.js" charset="utf-8"></script>
   </body>
 
 </html>
