@@ -19,8 +19,8 @@
       var editItem = function () {
         return $http.put(url + id, data);
       };
-      var deleteItem = function () {
-        return $http.delete();
+      var deleteItem = function (item) {
+         $http.delete(url + "/" + item._id);
       };
 
       return {

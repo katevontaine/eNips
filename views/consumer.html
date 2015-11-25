@@ -1,1 +1,10 @@
-<h2>this is consumer</h2>
+<h3>Welcome to eNips | Luxury Goods for Feline Friends</h3>
+<article ng-repeat="item in cats" >
+<a href="#/shop/shop"><img ng-src="{{item.image}}" data-id="{{item.id}}"></a>
+<h4>{{item.name}}</h4>
+<h5 style="font-style:italic;">{{item.price | currency}}</h5>
+<p>{{item.description}}</p>
+<button class="babyBtn" type="button" name="button" ng-click="addToCart(item)">Add to Cart</button>
+</article>
+<br><br>
+<a href="#/admin"><button class="login" type="" name="">Admin Login</button></a>
