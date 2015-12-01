@@ -1,10 +1,5 @@
-<h2>this is cart</h2>
-<article ng-repeat="item in cart">
-<img ng-src="{{item.image}}" data-id="{{item.id}}">
-<h4>{{item.name}}</h4>
-<h5 style="font-style:italic;">{{item.price | currency}}</h5>
-<p>{{item.description}}</p>
-<button class="babyBtn" type="button" name="button" ng-click="removeItem(item)">Edit</button> <p> or</p>
-
-
-</article>
+<section class="header">
+<a href="#/shop"><h5>eNips | Luxury Goods for Feline Friends</h5></a>
+<a href="#/shop"><button class="cartBtn" type="" name="">Keep Shopping</button></a>
+</section>
+<add-cart ng-repeat="cat in CartCtrl.cats" item='cat' action="CartCtrl.editItem(cat)"></add-cart>

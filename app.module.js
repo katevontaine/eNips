@@ -12,23 +12,23 @@
       $routeProvider
         .when('/', {
           templateUrl: 'views/main.html',
-          controller: 'MainController'
+          controller: 'MainController as MainCtrl'
         })
         .when('/shop', {
           templateUrl: 'views/consumer.html',
-          controller: 'ItemController'
+          controller: 'ItemController as ItemCtrl'
         })
-        .when('/shop/shop:Id', {
+        .when('/shop/:shopid', {
           templateUrl: 'views/item.html',
-          controller: 'ItemController'
+          controller: 'ItemController as ItemCtrl'
         })
         .when('/admin', {
           templateUrl: 'views/admin.html',
-          controller: 'ItemController'
+          controller: 'ItemController as ItemCtrl'
         })
         .when('/cart', {
           templateUrl: 'views/cart.html',
-          controller: 'ItemController'
+          controller: 'CartController as CartCtrl'
         })
         .when('/404', {
           template: "<h1> SORRY NO BUENO </h1>"

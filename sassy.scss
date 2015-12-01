@@ -85,6 +85,7 @@ a{
   // }
 }
 article{
+  margin: 0 auto;
   display: inline-block;
   padding: 10px;
   img{
@@ -97,9 +98,40 @@ article{
 }
 h1, h2, h3, h4, h5{
   color: #ff00bf;
+  padding: 0;
 }
 h3{
   padding-left: 20px;
   font-size: 38px;
-
+}
+.theItemView{
+  margin: 0 auto;
+  text-align: center;
+  width: 90%;
+  display: inline-block;
+  padding: 0;
+  img{
+    max-height: 400px;
+  }
+}
+.theViewBtn{
+  display: inline-block;
+  padding: 15px;
+  font-size: 20px;
+}
+.toSide{
+  display: inline-block;
+  margin: 0 auto;
+  padding-top: 100px;
+  text-align: center;
+  vertical-align: top;
+}
+.cartBtn{
+  text-align: right;
+  padding: 10px;
+  font-size: 15px;
+  vertical-align: top;
+}
+.header{
+  padding-left: 15px;
 }

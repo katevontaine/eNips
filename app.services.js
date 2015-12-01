@@ -15,7 +15,9 @@
       var getItem = function () {
         return $http.get(url);
       };
-
+      var getSingleItem = function(id) {
+        return $http.get(url+"/"+id);
+      };
       var editItem = function () {
         return $http.put(url + id, data);
       };
@@ -27,8 +29,8 @@
         newItem: addItem,
         getItem: getItem,
         editItem: editItem,
-        deleteItem: deleteItem
-
+        deleteItem: deleteItem,
+        getSingleItem: getSingleItem
       };
 
     });

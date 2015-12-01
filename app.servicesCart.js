@@ -8,17 +8,22 @@
 
       var addToCart = function (newItem) {
         $http.post(url, newItem).then(function (res) {
-          console.log(newItem);
-          alert"clicked";
+          console.log(res);
         });
       };
+
+      var getCartItems = function() {
+        return $http.get(url)
+      }
 
       var removeItem = function () {
          $http.delete(url + "/" + item._id);
       };
+
       return {
         addToCart: addToCart,
-        removeItem: deleteItem
+        removeItem: removeItem,
+        getCartItems: getCartItems
       };
     });
 })();
