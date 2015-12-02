@@ -1,0 +1,14 @@
+<section class="header">
+<a href="#/shop"><h2>eNips | Luxury Goods for Feline Friends</h2></a>
+<a href="#/cart"><button class="cartBtn" type="" name="">View Cart</button></a>
+</section>
+
+<article class="myArticles" ng-repeat="item in cats" >
+<a href="#/shop/{{item._id}}"><img ng-src="{{item.image}}" data-id="{{item.id}}"></a>
+<h4>{{item.name}}</h4>
+<h5 style="font-style:italic;">{{item.price | currency}}</h5>
+<p>{{item.description}}</p>
+<button class="babyBtn" type="button" name="button" ng-click="addToCart(item)">Add to Cart</button>
+</article>
+<br><br>
+<a href="#/admin"><button class="login" type="" name="">Admin Login</button></a>
