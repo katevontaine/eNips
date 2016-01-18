@@ -1,0 +1,10 @@
+
+<article>
+    <img ng-src="{{item.image}}" data-id="{{item.id}}">
+    <h4>{{item.name}}</h4>
+    <h5 style="font-style:italic;">{{item.price | currency}}</h5>
+    <p>{{item.description}}</p>
+    <button class="babyBtn" type="button" name="button" ng-click="action(removeItem(theItem))">Remove Item</button>
+
+
+</article>

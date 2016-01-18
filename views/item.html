@@ -1,0 +1,23 @@
+<section class="header">
+<a href="#/shop"><h5>eNips | Luxury Goods for Feline Friends</h5></a>
+<a href="#/cart"><button class="cartBtn" type="" name="">View Cart</button></a>
+</section>
+
+<article class="theItemView">
+<h2>{{item.name}}</h2>
+
+<a href="#/shop/{{item.id}}"><img ng-src="{{item.image}}" data-id="{{item.id}}"></a>
+<div class="toSide"
+<h5 style="font-style:italic;">{{item.price | currency}}</h5>
+<p>{{item.description}}</p>
+<button class="babyBtn theViewBtn" type="button" name="button" ng-click="addToCart(item)">Add to Cart</button>
+</div>
+
+</article>
+
+<!-- <div ng-repeat="items in cats" >
+<input type="text" name="image" ng-model="newItem.image" placeholder="Item Image Link" value="{{newItem.image}}"><br>
+<input type="text" name="name" ng-model="newItem.name" placeholder="Product Name" value="{{newItem.name}}"><br>
+<input type="text" name="price" ng-model="newItem.price" placeholder="Price" value="{{newItem.price}}"><br>
+<input type="text" name="description" ng-model="newItem.description" placeholder="Description" value="{{newItem.description}}"><br><br>
+<div ng-repeat="items in eNip"> -->
