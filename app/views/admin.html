@@ -1,6 +1,6 @@
 <section class="header">
-<h3>Add More Products</h3>
-<a href="#/shop"><button class="cartBtn" type="" name="">Back to Customer View</button></a>
+<h2>Add More Products</h2>
+<a href="#/shop"><h3>Back to Customer View</h3></a>
 
 </section>
 <div class="anItem">
@@ -11,6 +11,9 @@
 <button type="button" name="button" ng-click="addItem(newItem)">Create Item</button>
 </div>
 
+
+
+<section class="theItems">
 <article ng-repeat="item in cats" >
 <img ng-src="{{item.image}}" data-id="{{item.id}}">
 <h4>{{item.name}}</h4>
@@ -19,3 +22,4 @@
 <button class="babyBtn" type="button" name="button" ng-click="editItem(item)">Edit</button> <p> or</p>
 <button class="babyBtn" type="button" name="button" ng-click="deleteItem(item)">Delete</button>
 </article>
+</section>
